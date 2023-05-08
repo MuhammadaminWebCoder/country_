@@ -1,32 +1,26 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div id="app" :class="{'darkMode':drawer}">
+      <div class="navbar">
+        <h2>Where in the world?</h2>
+        <div class="mode" @click="drawer =! drawer">
+          <i class="fas fa-moon"></i>Dark Mode
+        </div>
+      </div>
+    <RouterView/>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+export default {
+  data() {
+    return{
+      drawer: false
+    }
+  },
+  methods: {
+    mode() {
+      
+    }
+  }
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>

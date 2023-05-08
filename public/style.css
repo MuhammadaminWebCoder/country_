@@ -1,0 +1,227 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      list-style-type: none;
+}
+#app{
+      background-color: #F2F2F2 !important;
+}
+.mode{
+      cursor: pointer;
+}
+.navbar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      width: 100%;
+      padding:0 45px;
+      background: white;
+}
+.fa-moon{
+      margin-right: 10px;
+}
+.container{
+      padding: 45px;
+}
+.Ccontainer{
+      padding: 45px;
+}
+.nav-form{
+      display: flex;
+      justify-content: space-between;
+}
+.input-form{
+      display: flex;
+      position: relative;
+}
+.fa-search{
+      position: absolute;
+      left: 17px;
+      top: 35%;
+}
+.input-form input{
+      background-color: white;
+      border: none;
+      width: 480px;
+      height: 55px;
+      padding-left:50px ;
+      outline: none;
+}
+#cars{
+      border: none;
+      padding:0 50px;
+      outline: none;
+}
+.loader {
+      border: 16px solid transparent;
+      border-radius: 50%;
+      border-top: 16px solid blue;
+      border-bottom: 16px solid blue;
+      width: 120px;
+      margin:30px auto;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+      display: flex;
+    }
+    
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+}
+
+.allBox{
+      display: flex;
+      justify-content: space-between;
+      gap: 45px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+}
+.box{
+      width: 264px !important;
+      background-color: white;
+}
+.d-none{
+      display: none;
+}
+.box h4{
+      margin:0 10px;
+}
+.box .comp{
+      display: block;
+      margin: 7px 0;
+}
+.box .comp:nth-child(2){
+      margin-top: 8px;
+}
+.box .text{
+      padding: 20px;
+}
+.comp span{
+      color: gray;
+}
+@media screen and (max-width:972px) {
+      .box{
+            width: 360px !important;
+            margin: 0;
+      }
+      .box img{
+            width: 100% !important;
+      }
+      .CitemBtn{
+            padding: 10px 20px !important;
+            font-size: 9px;
+      }
+}
+@media screen and (max-width:852px) {
+      .box{
+            width: 100% !important;
+      }
+      .nav-form{
+            display: block;
+      }
+      .nav-form input{
+            width: 100%;
+            margin-bottom: 10px;
+      }
+      #cars{
+            width: 100%;
+            height: 60px;
+      }
+}
+@media screen and (max-width:600px){
+      .indexBox{
+            display: block !important;
+      }
+      .dalnx{
+            width: 100% !important;
+            margin: 0 !important;
+      }
+      .IndImage{
+            width: 100% !important;
+            padding: 0 !important;
+            height: fit-content !important;
+            margin:20px 0 !important;
+      }
+}
+@media screen and (max-width:486px){
+      .navbar h2{
+            font-size: 15px;
+      }
+      .mode{
+            font-size: 12px;
+      }
+}
+@media screen and (min-width:972px){
+      .box img{
+            height: 160px;
+      }
+}
+.CitemBtn{
+      padding: 12px 30px;
+      width: fit-content;
+      box-shadow: 1px 1px 7px 1px white; 
+      background-color: white;
+}
+.flex{
+      width: 86%;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+}
+.comp .CitemBtn{
+      margin-bottom: 0;
+      margin:0 12px;
+}
+.router-link-active{
+      text-decoration: none;
+      color: black;
+}
+.back{
+      width: 120px !important;
+      margin: 0;
+}
+.indexBox{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.dalnx{
+      flex-wrap: wrap;
+      width: 50%;
+      justify-content: space-between;
+
+}
+.dalnx h2{
+      margin-bottom: 16px;
+}
+.IndImage{
+      width: 50%;
+      padding-right: 7%;
+      height: 483px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+}
+.dalnx .comp{
+      display: block;
+      margin: 5px 0;
+}
+.Clast{
+      margin-top: 45px !important;
+      display: flex !important;
+      align-items: center;
+      flex-wrap: wrap;
+}
+.Clast .CitemBtn{
+      display: block;
+      margin-bottom:10px ;
+}
